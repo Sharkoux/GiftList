@@ -12,7 +12,7 @@ const root = merkleTree.getRoot();
 const name = 'Norman Block';
 const index = niceList.findIndex(n => n === name);
 const proof = merkleTree.getProof(index);
-
+console.log(proof)
 // verify proof against the Merkle Root
 console.log( verifyProof(proof, name, root) ); // true, Norman Block is in the list!
 
